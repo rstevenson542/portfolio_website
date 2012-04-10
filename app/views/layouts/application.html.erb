@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevWebsite</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div id="wrapper">
+      <div id="header" class="container_24 clearfix">
+          <div id="logo" class="grid_7">
+            <h1>
+              <%= link_to "Logo" %>
+            </h1>
+          </div logo>
+          <div id="nav" class="grid_17">  
+            <ul>
+              <li id="nav-home"><%= link_to 'Home', root_url %></li>
+              <li id="nav-blog"><%= link_to 'Blog', blogs_path %></li>
+              <li id="nav-portfolio"><%= link_to 'Portfolio', portfolios_path %></li>
+              <li id="nav-about"><%= link_to 'About', about_path %></li>
+            </ul>
+          </div nav>  
+            
+        </div header>
+        <%= yield %>
+    </div wrapper>
+
+</body>
+</html>

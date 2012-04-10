@@ -1,0 +1,13 @@
+<h1>Ruby on Rails Blog</h1>
+
+<ul>
+<% @blogs.each do |blog| %>
+    <li>
+    <%= link_to blog.title, blog_path(blog) %> <br/>
+    <%= blog.author %> <br/>
+    <%= blog.post %> <br/>
+    </li>
+<% end %>
+</ul>
+
+<%= link_to "New_post", new_blog_path %>
