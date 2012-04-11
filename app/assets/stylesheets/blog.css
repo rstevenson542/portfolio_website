@@ -1,0 +1,32 @@
+
+.blog_wrapper {
+width: 520px;
+margin-left: 260px;
+}
+
+.blog_header {
+color: #333;
+text-decoration:none;
+padding: 1px 2px;
+background: #F9FC7E;
+display:inline-block;
+font-weight:normal;
+font-size: 28px;
+line-height: 150%;
+	
+}
+
+.datetime {
+font-size: 12px;
+line-height: 150%;
+color: #666;
+position: relative;
+float: left;
+margin-left: -250px;
+padding-right: 25px;
+border-right: 1px solid #999;
+width: 200px;
+text-align: right;
+clear: both;
+margin-top: 37px;
+}

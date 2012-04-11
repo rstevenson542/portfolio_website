@@ -34,10 +34,28 @@ display:inline;
 }
 
 #nav li a {
+font-size: 19px;
 margin-left: 30px;
 display:block;
 float:left;
-height:129px;
+margin-top: 65px;
+line-height: 45px;
+text-decoration:none;
+}
+
+#nav li A:link {
+	text-decoration:none;
+}
+
+#nav li A:visited {
+	text-decoration: none; 
+	color: black;}
+
+#nav li A:hover {
+	color: #DB8F18; 
+	background-color:000000;
+	border-top: 1px solid gray;
+	
 }
 
 .container_24 .grid_17 {
