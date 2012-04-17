@@ -49,7 +49,7 @@ text-decoration:none;
 
 #nav li A:visited {
 	text-decoration: none; 
-	color: black;}
+	color: #333;}
 
 #nav li A:hover {
 	color: #DB8F18; 

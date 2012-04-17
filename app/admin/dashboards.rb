@@ -1,5 +1,17 @@
 ActiveAdmin::Dashboards.build do
 
+  section "Recent Inquiries" do
+    table_for Contact.order("created_at desc").limit(10) do
+      column :name do |contact|
+        link_to contact.name, [:admin, contact] #links to the specific contact on the admin page, same as (admin_contact_path(contact))
+      end
+      column :phone
+      column :description
+    end
+    strong { link_to "View all Contacts", admin_contacts_path }
+  end
+
+
   # Define your dashboard sections here. Each block will be
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.

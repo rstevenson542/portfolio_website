@@ -2,7 +2,7 @@
 <div class="blog_wrapper">
    <% @blogs.each do |blog| %>
         <h3 class="datetime"><%= l(blog.created_at, :format => :short) %></h3>
-        <h2 class="blog_header"><%= blog.title %></h2>
+        <h2 class="blog_header"><%= link_to blog.title, blog_path(blog) %></h2>
         <p class="blog_main"><%= blog.post %></li></p><br/>
     <% end %>
 </div wrapper>

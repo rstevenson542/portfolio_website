@@ -30,3 +30,17 @@ text-align: right;
 clear: both;
 margin-top: 37px;
 }
+
+.blog_header a:link {
+	text-decoration:none;
+	color: #666;
+}
+
+.blog_header a:visited {
+	text-decoration:none;
+	color: #333;
+}
+
+.blog_header a:hover {
+	color:gray;
+}
