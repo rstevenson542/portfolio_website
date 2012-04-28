@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen|Ruda|Karla|Open+Sans+Condensed:300|Share' rel='stylesheet' type='text/css'>
   <title>DevWebsite</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application", "coderay", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -11,7 +12,7 @@
       <div id="header" class="container_24 clearfix">
           <div id="logo" class="grid_7">
             <h1>
-              <%= link_to "Logo" %>
+              <%= image_tag("logo.jpg", :alt => "logo")%>
             </h1>
           </div logo>
           <div id="nav" class="grid_17">  

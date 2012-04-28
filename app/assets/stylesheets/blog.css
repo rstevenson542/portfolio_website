@@ -8,12 +8,13 @@ margin-left: 260px;
 color: #333;
 text-decoration:none;
 padding: 1px 2px;
-background: #F9FC7E;
+background: #e1e3e0;
 display:inline-block;
 font-weight:normal;
 font-size: 28px;
 line-height: 150%;
-	
+font-family: 'Ruda', sans-serif;
+text-transform: capitalize;	
 }
 
 .datetime {
@@ -29,6 +30,7 @@ width: 200px;
 text-align: right;
 clear: both;
 margin-top: 37px;
+font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .blog_header a:link {
@@ -43,4 +45,8 @@ margin-top: 37px;
 
 .blog_header a:hover {
 	color:gray;
+}
+
+.blog_main {
+	font-family: 'Open Sans Condensed', sans-serif;
 }

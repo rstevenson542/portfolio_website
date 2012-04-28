@@ -11,6 +11,9 @@ class ContactsController < ApplicationController
    def create
      @contact = Contact.new(params[:contact])
      if @contact.save
+       # Tell the ContactMailer to send the contact_email after save
+       ContactMailer.contact_email(@contact).deliver
+       
        redirect_to root_url, notice: "Contact was successfully created"
      else
        render action:"new"

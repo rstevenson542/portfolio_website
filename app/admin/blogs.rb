@@ -6,3 +6,4 @@ ActiveAdmin.register Blog do
     end
     
 end
+  

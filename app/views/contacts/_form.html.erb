@@ -1,40 +1,11 @@
-<div class="form">
-<%= form_for(@contacts) do |f| %>
-  
-  <div class="name">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="email">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="phone">
-    <%= f.label :phone %><br />
-    <%= f.text_field :phone %>
-  </div>
-  <div class="company">
-    <%= f.label :company %><br />
-    <%= f.text_field :company %>
-  </div>
-  <div class="timeframe">
-    <%= f.label :timeframe %><br />
-    <%= f.text_field :timeframe %>
-  </div>
-  <div class="project">
-    <%= f.label :Project_Type %><br />
-    <%= f.text_field :project %>
-  </div>
-  <div class="budget">
-    <%= f.label :budget %><br />
-    <%= f.text_field :budget %>
-  </div>
-  <div class="description">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-</div>
+<form id="contact">
+  <%= form_for(@contacts) do |f| %>
+  <fieldset id="inputs">
+    <h1>Contact Me</h1>
+    <div class="name"><%= f.text_field :name, :placeholder => "name" %></div>
+    <div class="email"><%= f.text_field :email, :placeholder => "email"%></div>
+    <div class="description"><%= f.text_area :description, :placeholder => "description" %></div>
+    <div id="submit"><%= f.submit 'Submit', :class => 'button' %></div>
+  </fieldset>
+  <% end %>
+</form>

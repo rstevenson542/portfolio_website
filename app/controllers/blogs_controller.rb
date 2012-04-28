@@ -18,15 +18,15 @@ class BlogsController < ApplicationController
   end
   
   def show
-    @blog = Blog.find(params[:id])
+    @blog = Blog.find_by_permalink(params[:id])
   end
   
   def edit
-    @blog = Blog.find(params[:id])
+    @blog = Blog.find_by_permalink(params[:id])
   end
   
   def destroy
-    @blog = Blog.find(params[:id])
+    @blog = Blog.find_by_permalink(params[:id])
     @blog.destroy
   end
 

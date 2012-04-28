@@ -1,0 +1,25 @@
+.macbook {
+	margin-left: 226px;
+	margin-top: 50px;
+}
+
+.front_text h2 {
+	font-size: 55px;
+	margin-left: 72px;
+	font-family: 'Oxygen', sans-serif;
+	color: #222;
+	margin-top: 50px;
+}
+
+.subtitle h2 {
+	font-size: 21px;
+	margin-left: 250px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #222;
+}
+
+.dots h3 {
+	font-family: 'Oxygen', sans-serif;
+	color: #222;
+	margin-left: 365px;
+}

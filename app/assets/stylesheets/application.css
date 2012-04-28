@@ -9,9 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require_tree
  *= require_header
  *= require_blog
+ *= require_coderay
+ *= require_home
+ *= require_contact
 */
 
 body {
@@ -36,7 +39,7 @@ font-size: 64px;
 font-weight: 700;
 line-height: 68px;
 letter-spacing: -1px;
-margin: 5px 0 20px 0;
+margin: 5px 0 0px 0;
 }
 
 .clearfix::after {
