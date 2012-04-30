@@ -3,12 +3,12 @@
 	z-index: 0;
 	margin: 35px 0 50px 0;
 	background-color: white;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#EDEAE4));
-	background-image: -webkit-linear-gradient(top, white, #EDEAE4);
-	background-image: -moz-linear-gradient(top, white, #EDEAE4);
-	background-image: -ms-linear-gradient(top, white, #EDEAE4);
-	background-image: -o-linear-gradient(top, white, #EDEAE4);
-	background-image: linear-gradient(top, white, #EDEAE4);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#E1E3E0));
+	background-image: -webkit-linear-gradient(top, white, #E1E3E0);
+	background-image: -moz-linear-gradient(top, white, #E1E3E0);
+	background-image: -ms-linear-gradient(top, white, #E1E3E0);
+	background-image: -o-linear-gradient(top, white, #E1E3E0);
+	background-image: linear-gradient(top, white, #E1E3E0);
 	position: relative;
 	top: 50%;
 	left: 23.5%;

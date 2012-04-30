@@ -5,7 +5,7 @@ ActiveAdmin::Dashboards.build do
       column :name do |contact|
         link_to contact.name, [:admin, contact] #links to the specific contact on the admin page, same as (admin_contact_path(contact))
       end
-      column :phone
+      column :email
       column :description
     end
     strong { link_to "View all Contacts", admin_contacts_path }
