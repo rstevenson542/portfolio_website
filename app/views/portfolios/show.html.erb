@@ -1,3 +1,19 @@
-<%= @portfolio.title %> <br/>
-<%= @portfolio.context %> <br/>
-<%= @portfolio.description %> <br/>
+<div class="page_container">
+  <div class="left_column">
+    <h1><%= image_tag(@portfolio.photo.url(:large)) %></h1>
+    <h3>Project</h3>
+      <p><%= @portfolio.title %></p>
+    <h3>Github</h3>
+      <p><%= @portfolio.github %></p>
+  </div show_photo>
+  <div class="right_column">
+    <h1>Project Description</h1>
+      <p><%= @portfolio.description %></p>
+    <h1>Services</h1>
+      <p><%= @portfolio.services %></p>
+    <h1>Tools</h1>
+      <p><%= @portfolio.tools %></p>
+  </div>
+</div page_container>
+<div class="about_footer">
+</div footer>

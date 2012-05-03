@@ -1,0 +1,21 @@
+#footer {
+font-size: 14px;
+color: #938B82;
+padding-top: 20px;
+margin: auto;
+margin-bottom: 160px;
+font-family: 'Ruda', sans-serif;
+}
+
+#footer .left h2{
+	margin-left: 115px;
+	font-size:15px;
+	display:inline;
+	float:left;
+}
+
+#footer .left h3 {
+	float:left;
+	display:inline;
+	margin: 10px 0 0 440px;
+}

@@ -1,13 +1,16 @@
-<h1>Project Portfolio</h1>
+<div class="page_container">
+      <% @portfolios.each do |portfolio| %>
+      <div class="item">
+          <div class="img">
+              <%= link_to(content_tag(:span) + image_tag(portfolio.photo.url(:medium)), portfolio_url(portfolio)) %>
+          </div img>
+          <div class="item_info">
+            <h3><%= link_to portfolio.title, portfolio_url(portfolio) %></h3>
+            <p><%= portfolio.context %></p>
+          </div item_info>  
+      </div item>
+      <% end %>
+</div page_container>
+<div class="about_footer">
+</div footer>
 
-<ul>
-<% @portfolios.each do |portfolio| %>
-    <li>
-    <%= link_to portfolio.title, portfolio_path(portfolio) %> <br/>
-    <%= portfolio.context %> <br/>
-    <%= portfolio.description %> <br/>
-    </li>
-<% end %>
-</ul>
-
-<%= link_to "New_project", new_portfolio_path %>

@@ -1,10 +1,10 @@
 <form id="contact">
   <%= form_for(@contacts) do |f| %>
   <fieldset id="inputs">
-    <h1>Contact Me</h1>
-    <div class="name"><%= f.text_field :name, :placeholder => "name" %></div>
-    <div class="email"><%= f.text_field :email, :placeholder => "email"%></div>
-    <div class="description"><%= f.text_area :description, :placeholder => "description" %></div>
+    <h1>Hire Me</h1>
+    <div class="name"><%= f.text_field :name, :placeholder => "Name  (ex: John Doe)" %></div>
+    <div class="email"><%= f.text_field :email, :placeholder => "Email  (ex: jdoe@fubar.com)"%></div>
+    <div class="description"><%= f.text_area :description, :placeholder => "Description  (Timeframe, Budget, Project Summary)" %></div>
     <div id="submit"><%= f.submit 'Submit', :class => 'button' %></div>
   </fieldset>
   <% end %>
