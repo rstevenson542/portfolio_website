@@ -8,7 +8,7 @@ font-family: 'Ruda', sans-serif;
 }
 
 #footer .left h2{
-	margin-left: 115px;
+	margin-left: 127px;
 	font-size:15px;
 	display:inline;
 	float:left;
@@ -17,5 +17,5 @@ font-family: 'Ruda', sans-serif;
 #footer .left h3 {
 	float:left;
 	display:inline;
-	margin: 10px 0 0 440px;
+	margin: 10px 0 0 420px;
 }

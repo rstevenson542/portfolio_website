@@ -8,6 +8,7 @@
 	padding-top: 35px;
 	float:left;
 	width: 300px;
+	margin-left:45px;
 }
 
 .left_column h2 {
@@ -33,6 +34,10 @@
 	font-size: 14px;
 }
 
+.left_column p a {
+	margin-right:15px;
+	margin-left:15px;
+}
 .right_column {
 	float:left;
 	width: 560px;

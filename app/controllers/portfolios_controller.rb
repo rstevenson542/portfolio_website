@@ -26,7 +26,7 @@ class PortfoliosController < ApplicationController
   end 
   
   def destory
-    @portfolio = Portfolio. find(params[:id])
+    @portfolio = Portfolio.   find(params[:id])
     @portfolio.destroy
     redirect_to root_url, notice: "portfolio destroyed"
   end
