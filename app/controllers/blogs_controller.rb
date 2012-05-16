@@ -4,16 +4,27 @@ class BlogsController < ApplicationController
     @blogs = Blog.all
   end
   
-  def new
-    @blog = Blog.new
-  end
-  
   def create
     @blog = Blog.new(params[:blog])
-    if @blog.save
-      redirect_to root_url, notice: "Post was successfully updated"
-    else
-      render action:"new"
+    #cleanly supporting multiple sets of view logic within the same action via XML or JSON
+    respond_to do |format|
+      if @blog.save
+        format.html do
+          redirect_to(@blog,
+                      :notice => 'Blog was successfully created.')
+        end
+        format.xml do
+          render :xml => @blog,
+                 :status => :created,
+                 :location => @blog
+        end
+      else
+        format.html { render :new }
+        format.xml do 
+          render :xml => @blog.errors,
+                 :status => :unprocessable_entity
+        end
+      end
     end
   end
   
@@ -21,13 +32,5 @@ class BlogsController < ApplicationController
     @blog = Blog.find_by_permalink(params[:id])
   end
   
-  def edit
-    @blog = Blog.find_by_permalink(params[:id])
-  end
-  
-  def destroy
-    @blog = Blog.find_by_permalink(params[:id])
-    @blog.destroy
-  end
 
 end
