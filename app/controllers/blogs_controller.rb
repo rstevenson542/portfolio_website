@@ -29,7 +29,7 @@ class BlogsController < ApplicationController
   end
   
   def show
-    @blog = Blog.find_by_permalink(params[:id])
+    @blog = Blog.find(params[:id])
   end
   
 

@@ -49,8 +49,12 @@ margin-top: 78px;
 line-height: 45px;
 text-decoration:none;
 font-family: 'Ruda', sans-serif;
+outline: 0;
 }
 
+#nav li a:hover, a:active, a:focus {
+	text-decoration:none;`
+}
 #nav li A:link {
 	text-decoration:none;
 }
